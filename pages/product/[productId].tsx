@@ -6,28 +6,7 @@ import { useCart } from "@/contexts/CartContext";
 import toast from "react-hot-toast";
 import ProductDetailsSinglePage from "@/components/product/ProductDetailsSinglePage.jsx";
 
-// Define the shape of a product
-interface Product {
-  _id: string;
-  name: string;
-  brand: string;
-  price: number;
-  images: string[];
-  description: string;
-  material: string;
-  condition: string;
-  bracelet: string;
-  movement: string;
-  thickness: string;
-  glass: string;
-  luminova: string;
-  quantity: number;
-  casematerial: string;
-  crown: string;
-  bandsize: string;
-  lugs: string;
-  water: string;
-}
+import { Product } from "@/interfaces";
 
 // Define the shape of a review
 interface Review {
