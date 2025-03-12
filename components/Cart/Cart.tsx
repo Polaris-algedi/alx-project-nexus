@@ -3,17 +3,10 @@ import { useCart } from "@/contexts/CartContext";
 import Image from "next/image";
 import { Trash2, ShoppingCart, Minus, Plus } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Product } from "@/interfaces";
 
 // Define the type for a cart item
-interface CartItem {
-  _id: string;
-  name: string;
-  brand: string;
-  material: string;
-  price: number;
-  quantity: number;
-  images: string[]; // Assuming images is an array of strings (URLs)
-}
+interface CartItem extends Product {}
 
 const Cart: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);

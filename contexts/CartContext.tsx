@@ -1,3 +1,4 @@
+import { Product } from "@/interfaces";
 import {
   createContext,
   useContext,
@@ -7,18 +8,6 @@ import {
   Dispatch,
 } from "react";
 import toast from "react-hot-toast";
-
-// Define the shape of a product in the cart
-interface Product {
-  _id: string;
-  name: string;
-  brand: string;
-  material: string;
-  price: number;
-  quantity: number;
-  images: string[];
-  // Add other product properties as needed
-}
 
 // Define the shape of the cart state
 type CartState = Product[];

@@ -3,14 +3,10 @@
 import React, { useEffect, useState } from "react";
 import { useCart } from "@/contexts/CartContext";
 import Cart from "./Cart";
+import { Product } from "@/interfaces";
 
-// Define the type for the cart item
-interface CartItem {
-  _id: string;
-  name: string;
-  quantity: number;
-  // Add other properties as needed
-}
+// Define the type for a cart item
+interface CartItem extends Product {}
 
 const CartIconNav: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
