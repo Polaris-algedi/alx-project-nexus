@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router"; // Import useRouter
 import { useCart } from "@/contexts/CartContext";
 import toast from "react-hot-toast";
-import ProductDetailsSinglePage from "@/components/product/ProductDetailsSinglePage.jsx";
+import ProductDetailsSinglePage from "@/components/product/ProductDetailsSinglePage";
 
 import { Product } from "@/interfaces";
 
