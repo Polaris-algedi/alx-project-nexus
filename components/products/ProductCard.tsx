@@ -4,18 +4,9 @@ import { Heart, Plus } from "lucide-react";
 import { useState, useEffect, useMemo } from "react";
 import { useCart } from "@/contexts/CartContext";
 import toast from "react-hot-toast";
+import { Product } from "@/interfaces";
 
 // Define the shape of a product
-interface Product {
-  _id: string;
-  name: string;
-  brand: string;
-  price: number;
-  material: string;
-  quantity: number;
-  originalPrice?: number;
-  images: string[];
-}
 
 // Define the props for the ProductCard component
 interface ProductCardProps {

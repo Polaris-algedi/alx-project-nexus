@@ -1,17 +1,7 @@
 import { useState, useEffect } from "react";
 import ProductCard from "./ProductCard";
 
-// Define the shape of a product
-interface Product {
-  _id: string;
-  name: string;
-  brand: string;
-  price: number;
-  material: string;
-  quantity: number;
-  originalPrice?: number;
-  images: string[];
-}
+import { Product } from "@/interfaces";
 
 // Define the props for the ProductGrid component
 interface ProductGridProps {
